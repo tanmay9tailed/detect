@@ -1,5 +1,4 @@
 const userAgent = navigator.userAgent;
-
 if (/android/i.test(userAgent)) {
   document.getElementById("Main-H1").innerText = "Android Device";
 } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
@@ -9,3 +8,4 @@ if (/android/i.test(userAgent)) {
 } else {
   document.getElementById("Main-H1").innerText = "Laptop/Desktop";
 }
+document.getElementById("para").innerText = userAgent
